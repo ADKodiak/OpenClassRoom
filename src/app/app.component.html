@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <h2> Post</h2>
+      
+      
+      
+      <ul class="List-group">
+          
+      <app-appareil *ngFor="let post of post"
+                    [postTitle]="post.title"
+                    [postContent]="post.content"
+                    [postDate]="post.created_at">
+          </app-appareil>
+      </ul>
+
+    </div>
+</div>
